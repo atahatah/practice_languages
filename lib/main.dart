@@ -8,7 +8,14 @@
 // Flutter provides widgets and classes that help with internationalization
 // and the Flutter libraries themselves are internationalized.
 
+// Setting up an internation­alized app: the Flutter_localizations package
+// By default, Flutter only provides US English localizations.
+// To add support for other languages, an application must specify additional
+// MaterialApp (or CupertinoApp) properties, and include a package called
+// flutter_localizations. As of November 2020, this package supports 78 languages.
+
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +28,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en', ''), // English, no country code
+        Locale('es', ''), // Japanese, no country code
+      ],
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
