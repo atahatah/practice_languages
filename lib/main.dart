@@ -1,3 +1,13 @@
+//このプロジェクトは次のページを参考にして作られた。
+//https://flutter.dev/docs/development/accessibility-and-localization/internationalization
+
+//    If your app might be deployed to users who speak another language
+// then you’ll need to internationalize it. That means you need
+// to write the app in a way that makes it possible to localize values
+// like text and layouts for each language or locale that the app supports.
+// Flutter provides widgets and classes that help with internationalization
+// and the Flutter libraries themselves are internationalized.
+
 import 'package:flutter/material.dart';
 
 void main() {
