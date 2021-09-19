@@ -14,6 +14,10 @@
 // MaterialApp (or CupertinoApp) properties, and include a package called
 // flutter_localizations. As of November 2020, this package supports 78 languages.
 
+// iOSの対応にはさらなる変更が必要だが試すことができないのでトロイ頼んだｗ
+// 下のURLに書いてある通りにすればできるはずやｗｗ
+// https://flutter.dev/docs/development/accessibility-and-localization/internationalization#localizing-for-ios-updating-the-ios-app-bundle
+
 import 'package:flutter/material.dart';
 import 'package:practice_languages/l10n/app_localizations.dart';
 
