@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: const [
         Locale('en', ''), // English, no country code
-        Locale('es', ''), // Japanese, no country code
+        Locale('ja', ''), // Japanese, no country code
       ],
       theme: ThemeData(
         primarySwatch: Colors.blue,
